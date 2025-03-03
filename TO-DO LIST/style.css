@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.todo-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode .todo-container {
+    background-color: #444;
+    border-color: #555;
+}
+
+#task-input {
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+body.dark-mode #task-input {
+    border-color: #666;
+}
+
+#add-task-btn {
+    width: 25%;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#add-task-btn:hover {
+    background-color: #0069d9;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+body.dark-mode .task-item {
+    border-color: #555;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
+body.dark-mode .completed {
+    color: #aaa;
+}
+
+.remove-btn {
+    float: right;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+.toggle-btn {
+    float: right;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.toggle-btn:hover {
+    background-color: #1e7e34;
+}
+
+#clear-all-btn {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#clear-all-btn:hover {
+    background-color: #c82333;
+}
+
+.theme-toggle-container {
+    position: absolute;
+    top: 15px;
+    right: 500px;
+}
+
+.theme-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#light-icon {
+    display: block;
+    color: #333;
+}
+
+body.dark-mode #light-icon {
+    color: #fff;
+}
+
+#dark-icon {
+    display: none;
+}
+
+body.dark-mode #dark-icon {
+    display: block;
+}
